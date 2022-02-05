@@ -6,7 +6,7 @@ Chat with friends, colleagues without log in.
 
 ## Tech Stack
 
-**Client Side:** HTML5, CSS, Javascript
+**Client Side:** HTML5, CSS, Javascript<br/>
 **Server Side:** Socket.io, ExpressJs, NodeJs
 
 ## Future Goal
