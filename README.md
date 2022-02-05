@@ -11,11 +11,11 @@ Chat with friends, colleagues without log in.
 
 ## Future Goal
 
-To make the website responsive. 
+To make the website responsive. Also, include a database to store user socket id in a corresponding room number through this we can create multiple rooms. As of now only one room is created whose code is A1 to join.
 
 ## Deployed Project
 
- You can checkout my website on laptop from here https://chatx-app-deployed.netlify.app/
+ You can checkout my website on laptop from here https://chatx-app-deployed.herokuapp.com/
 
 ## Authors
 
