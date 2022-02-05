@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat App 101</title>
+    <link rel="stylesheet" href="chat.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&family=Playfair+Display&display=swap" rel="stylesheet">
+    <script src="https://cdn.socket.io/4.4.1/socket.io.min.js" integrity="sha384-fKnu0iswBIqkjxrhQCTZ7qlLHOFEgNkRmK2vaO/LbTZSXdJfAu6ewRBdwHPhBo/H" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="outer-container">
+        <div class="home-page">
+            <div><h1>Welcome to CHATX</h1></div>
+            <div>    
+                <img  class="roboimage" src="chatbot.png">
+            </div>
+            <div class="inner-content">
+                <label for="username" class="ulabel">Enter username to join :</label>
+                <input type="text" class="username" id="username">
+                <button class="btn-join">Join</button>
+            </div>
+        </div>
+        <div class="roomcondition hidden">
+            <p class="create_room"><strong>Do you want to create a new room?</strong></p>
+            <img src="shareopinion.svg" class="createimage">
+            <button class="btn-create">Create</button>
+            <p class="join_room">Already have a code? <strong><a href="javascript:joinroom()" class="jroom">Join</a></strong></p>
+        </div>
+        <div class="join_a_room hidden">
+            <p class="code_text">Enter your code : </p>
+            <input type="text" class="code">
+            <img src="verify.png" class="verifyimg">
+            <button class="go_button">Way to go</button>
+        </div> 
+        <div class="chat-page hidden">
+            <div class="header">
+                <h2>CHATX</h2>
+                <button class="btn-exit">Exit</button>
+            </div>
+                <div class="messages-in hidden">
+                    <div class="other">Secret Code to join chat : A1</div>
+            </div>
+        </div>
+        <div class="bottom hidden">
+            <input type="text" class="message-box">
+            <button class="btn-send">Send</button>
+        </div>
+    </div>
+    <script>
+        const room2=document.querySelector('.roomcondition');
+        const jroom2=document.querySelector('.join_a_room');
+        function joinroom(){
+            room2.classList.add("hidden");
+            jroom2.classList.remove("hidden");
+            const msgindividual=document.querySelector('.messages-in');
+            msgindividual.classList.remove("hidden");
+        }
+    </script>
+    <script src="chat.js"></script>
+</body>
+</html>

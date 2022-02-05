@@ -1,0 +1,268 @@
+body {
+	height: 97vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #94daff;
+}
+
+.outer-container {
+	border: 3px solid #03045e;
+	max-width: 480px;
+	height: 80vh;
+	width: 70vh;
+	background-color: #caf7e3;
+	box-shadow: 12px 12px 12px 6px rgba(0, 0, 255, .2);
+	overflow-y: auto;
+}
+
+.outer-container h1 {
+	padding-left: 17%;
+	padding-right: 1%;
+	padding-top: 5%;
+	padding-bottom: 2%;
+	font-family: 'Playfair Display', serif;
+}
+
+.roboimage {
+	height: 180px;
+	margin-left: 30%;
+	padding-bottom: 4%;
+}
+
+.createimage {
+	height: 180px;
+	margin-left: 20%;
+	padding: 4%;
+}
+
+.ulabel {
+	font-style: oblique;
+	padding-left: 20%;
+	font-weight: 900;
+	font-family: 'Lora', serif;
+}
+
+.username {
+	display: block;
+	margin-top: 5%;
+	margin-left: 18%;
+	height: 40px;
+	border: 1px solid #03045e;
+	width: 300px;
+	border-radius: 8px;
+}
+
+.btn-join,
+.btn-submit,
+.btn-create,
+.go_button {
+	margin-left: 33%;
+	margin-top: 12%;
+	padding: 4%;
+	font-size: larger;
+	border-radius: 20%;
+	transform: translate(40%, -40%);
+	cursor: pointer;
+	color: azure;
+	border: solid 1px #77d970;
+	background: steelblue;
+	transition: all 0.1s;
+	box-shadow: 0px 6px 0px #22577a;
+	font-family: 'Lora', serif;
+}
+
+.btn-join:hover,
+.btn-submit:hover,
+.btn-create:hover,
+.go_button:hover {
+	box-shadow: 0px 2px 0px #22577a;
+	position: relative;
+	top: 4px;
+}
+
+.btn-create {
+	margin-left: 27%;
+}
+
+.go_button {
+	margin-top: .05%;
+	margin-left: 23%;
+}
+
+.hidden {
+	display: none;
+}
+
+.bottom {
+	margin-top: 33.8%;
+	background: #caf7e3;
+	width: 449.6px;
+	height: 4.5vh;
+	padding: 1%;
+	position: fixed;
+	border: 3px solid #03045e;
+	border-top: 0;
+	margin-left: -0.2%;
+	box-shadow: 7.4px 12px 12px 9px rgba(0, 0, 255, .2);
+}
+
+.message-box {
+	width: 300px;
+	height: 29px;
+	border-radius: 8px;
+	border: 1px solid #03045e;
+	margin-left: 7%;
+	margin-top: -4%;
+}
+
+.btn-send {
+	padding: 1%;
+	border-radius: 20%;
+	cursor: pointer;
+	font-size: large;
+	font-family: 'Lora', serif;
+	box-shadow: 0px 6px 0px #22577a;
+	transition: all 0.1s;
+	background: steelblue;
+	border: solid 1px #77d970;
+	color: azure;
+}
+
+.btn-send:hover {
+	box-shadow: 0px 2px 0px #22577a;
+	transition: all 0.1s;
+	position: relative;
+	top: 4px;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 2px solid #03045e;
+	max-height: 80px;
+	width: 447px;
+	position: fixed;
+	background: #caf7e3;
+	border-radius: 4%;
+}
+
+.btn-exit {
+	margin: 3%;
+	cursor: pointer;
+	padding: 3%;
+	height: 15%;
+	border-radius: 20%;
+	color: whitesmoke;
+	font-size: medium;
+	font-family: 'Lora', serif;
+	border: solid 1px #c4293b;
+	background: #ee3f53;
+	transition: all 0.1s;
+	box-shadow: 0px 6px 0px rgb(228, 51, 87);
+}
+
+.btn-exit:hover {
+	box-shadow: 0px 2px 0px #ee3f53;
+	position: relative;
+	top: 4px;
+}
+
+.header h2 {
+	margin-top: 3.5%;
+	margin-left: 2.5%;
+	margin-bottom: 0%;
+	font-family: 'Lora', serif;
+	font-weight: 700;
+}
+
+.self {
+	float: right;
+	margin-right: 5%;
+	margin-top: 5%;
+	margin-bottom: 1.5%;
+	border-radius: 10%;
+	border: 1px solid #03045e;
+	padding: 2%;
+	background-color: mintcream;
+	clear: both;
+	font-family: 'Lora', serif;
+	box-shadow: 4px 4px 4px 2px rgba(0, 0, 255, .2);
+}
+
+.other {
+	float: left;
+	margin-left: 8%;
+	margin-top: 9%;
+	border: 1px solid #03045e;
+	padding: 2%;
+	border-radius: 10%;
+	background-color: moccasin;
+	clear: both;
+	margin-bottom: 1.5%;
+	font-family: 'Lora', serif;
+	box-shadow: 4px 4px 4px 2px rgba(0, 0, 255, .2);
+}
+
+.messages-in div:nth-child(1) {
+	margin-top: 20%;
+}
+
+.messages-in {
+	font-size: large;
+}
+
+.create_room,
+.join_room {
+	padding-left: 14%;
+	padding-right: 1%;
+	padding-top: 5%;
+	padding-bottom: 2%;
+	font-family: 'Lora', serif;
+	font-size: larger;
+}
+
+.create_room {
+	font-size: x-large;
+	padding-left: 10%;
+}
+
+.join_room {
+	padding-left: 23%;
+	padding-top: 1%;
+}
+
+.verifyimg {
+	height: 350px;
+	width: 350px;
+	margin-left: 10%;
+	margin-top: 0%;
+}
+
+.code_text {
+	font-family: 'Lora', serif;
+	font-weight: 700;
+	margin-top: 13%;
+	margin-left: 22%;
+	font-size: larger;
+}
+
+.code {
+	margin-top: 4%;
+	margin-left: 22%;
+	display: block;
+	height: 30px;
+	border: 1px solid #03045e;
+	width: 250px;
+	border-radius: 8px;
+}
+
+.content {
+	font-family: 'Lora', serif;
+	font-size: larger;
+}
+
+.btn-submit {
+	margin-top: 25%;
+	margin-left: 27%;
+}

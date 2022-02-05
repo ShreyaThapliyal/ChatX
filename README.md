@@ -1,6 +1,7 @@
+
 # ChatX App🚀
 
-ChatX is a real time web chat application. It is a completely free application which enables you to have live chats within seconds.
+ ChatX is a real time web chat application. It is a completely free application which enables you to have live chats within seconds.
 Chat with friends, colleagues without log in.
 
 ## Tech Stack
