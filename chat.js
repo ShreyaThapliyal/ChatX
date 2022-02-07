@@ -42,7 +42,7 @@ joinbtn.addEventListener("click",function(){
     homepage.classList.add("hidden");
     room.classList.remove("hidden");
     name.value=''; 
-    outer.scrollTop = outer.scrollHeight;
+    // outer.scrollTop = outer.scrollHeight;
     // used in future so keep a check maybe try to have value of name in another value and use it for remaining code or figure out any other way
 });
 
@@ -62,24 +62,22 @@ create_room.addEventListener("click",function(){
 
 waytogo.addEventListener("click",function(){
     if(rcode.value==roomid[0]){
-        console.log(`You entered ${room.value}`);
         jroom.classList.add('hidden');
         chat.classList.remove('hidden');
         bottom.classList.remove("hidden");
+        outer.style.height="71.5vh";
+        outer.style.marginBottom="80px";
+        outer.scrollTop = outer.scrollHeight;
         socket.emit('new-user-joined',uname);
-        // outer.scrollTop = outer.scrollHeight;
         socket.on('joined',(name)=>{
         //Display message tht new user has joined
         display(`${name} has joined the conversation`,'other');
-        // outer.scrollTop = outer.scrollHeight;
+        outer.scrollTop = outer.scrollHeight;
         });
     }
     else{
         alert("Enter valid code");
     }
-    outer.scrollTop = outer.scrollHeight;
-    outer.style.height="71.5vh";
-    outer.style.marginBottom="80px";
 });
 
 exitbtn.addEventListener("click",function(){
