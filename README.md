@@ -11,7 +11,7 @@ Chat with friends, colleagues without log in.
 
 ## Future Goal
 
-To make the website responsive. Also, include a database to store user socket id in a corresponding room number through this we can create multiple rooms. As of now only one room is created whose code is A1 to join.
+To make the website responsive. For now only one room is created whose code is A1 to join, this can be improved by generating roomid randomly.
 
 ## Deployed Project
 
